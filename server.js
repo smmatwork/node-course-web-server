@@ -4,8 +4,7 @@ var app = express();
 const hbs = require('hbs'); //Handle Bars code
 const fs = require('fs');
 
-// const port = process.env.port || 3000;
-const port = '0.0.0.0';
+const port = process.env.port || 3100;
 
 app.set('view engine','hbs');
 
