@@ -4,7 +4,7 @@ var app = express();
 const hbs = require('hbs'); //Handle Bars code
 const fs = require('fs');
 
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 hbs.registerPartials(__dirname + '/views/partials')
 app.set('view engine','hbs');
