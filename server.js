@@ -52,7 +52,14 @@ app.get('/bad',(req,res)=> {
             'Bad parameter'
         ]
     })
-})
+});
+
+app.get('/projects',(req,res)=> {
+    res.render('project.hbs',{
+        pageTitle: 'Projects & Portfolios',
+        currentYear: new Date().getFullYear()
+    });
+});
 app.listen(port,()=>{
     console.log(`Server started on port ${port}`);
 });
